@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Explorer Survey</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <h1>Earth Explorer Survey</h1>
+
+    <p>Earth is home to seven unique continents, each offering amazing landscapes, 
+    diverse wildlife, rich cultures, and unforgettable travel experiences. From
+    tropical rainforests and snowy mountains to historic landmarks and beautiful
+    coastlines, every continent has something special to explore.</p>
+
+    <p>Learn more about the world's continents, then complete the survey to share
+    your travel interests and dream destinations.</p>
+
+    <table>
+    <thead>
+        <tr>
+            <th scope="col">Continent</th>
+            <th scope="col" colspan="2">What Can You Explore?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Africa</td>
+            <td colspan="2">Wildlife, deserts, and exciting safari adventures</td>
+        </tr>
+        <tr>
+            <td>Antarctica</td>
+            <td colspan="2">Glaciers, penguins, and breathtaking ice landscapes</td>
+        </tr>
+        <tr>
+            <td>Asia</td>
+            <td colspan="2">Mountains, rainforests, ancient temples. and vibrant cultures</td>
+        </tr>
+        <tr>
+            <td>Europe</td>
+            <td colspan="2">Historic cities, castles, musums, and scenic countryside</td>
+        </tr>
+        <tr>
+            <td>North America</td>
+            <td colspan="2">National parks,forests, canyons, and beautiful lakes</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td colspan="2">Coral reefs, beaches, unique wildlife, and the Outback</td>
+        </tr>
+        <tr>
+            <td>South America</td>
+            <td colspan="2">Amazon rainforests, Andes mountains, and spectacular waterfalls</td>
+        </tr>
+    </tbody>
+    
+    </table>
+    
+    <h2>Share Your Travel Interests</h2>
+
+    <p>Tell us about the places you would most like to visit by completing the survey below.</p>
+
+    <form action="https://httpbin.org/post" method="POST">
+        <label>Name:<input></input type="text" id="name" name="name"></label><br>
+        <label>Email Address:<input type="text" id="email" name="email"></input></label><br>
+        <label>Which continent would you most like to explore?</label>
+        <select type="select" id="continent" name="continent">
+            <option value="volvo">Africa</option>
+            <option value="saab">Antarctica</option>
+            <option value="opel">Asia</option>
+            <option value="audi">Europe</option>
+            <option value="saab">North America</option>
+            <option value="opel">Australia</option>
+            <option value="audi">South America</option>
+        </select>
+        
+        <p>What interests you the most?</p>
+  
+        <input type="radio" id="nature" name="interest" value="nature" checked>
+        <label>Nature</label><br>
+
+        <input type="radio" id="phone" name="contact" value="phone_choice">
+        <label>Wildlife</label><br>
+
+        <input type="radio" id="mail" name="contact" value="mail_choice">
+        <label>History & Culture</label><br>
+
+        <label>Tell us what you would like to discover</label><br>
+        <input type="textarea" id="comments" name="comments" cols="30" rows="4"><br>
+        <label>Email me about new destinations and travel ideas</label><br>
+        <input type="select" id="updates" name="updates" checked><br>
+        <input type="submit" value="Submit Survey">
+    </form>
+</body>
+
+</html>
