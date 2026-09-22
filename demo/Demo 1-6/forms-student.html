@@ -20,8 +20,34 @@
             action="#" keeps this classroom demo on the same page.
             A real website would send the form data to a server for processing.
         -->
+        
         <form>
+            <fieldset>
+                <legend>Course Interest</legend>
+                <label for="topic">Which topic interests you most?</label>
+                <select id="topic" name="topic">
+                    <option value="Art">Art</option>
+                    <option value="Math">Math</option>
+                    <option value="History">History</option>
+                </select>
 
+                <p class="question">Which learning format do you perfer?</p>
+                <div class="choice-group">
+                    <input type="radio" id="in-person" name="format">
+                    <label for="in-person">In person</label>
+
+                    <input type="radio" id="online" name="format">
+                    <label for="online">Online</label>
+                </div>
+
+                <label for="questions">Questions or Comments</label>
+                <textarea id="Questions" name="questions"></textarea>
+
+                <div class="choice-group">
+                    <input type="checkbox" id="checkbox">
+                    <p for="checkbox">Send me course updates</p>
+                </div>
+            </fieldset>
         </form>
     </main>
 </body>
