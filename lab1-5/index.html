@@ -65,33 +65,36 @@
     <p>Tell us about the places you would most like to visit by completing the survey below.</p>
 
     <form action="https://httpbin.org/post" method="POST">
-        <label>Name:<input></input type="text" id="name" name="name"></label><br>
-        <label>Email Address:<input type="text" id="email" name="email"></input></label><br>
-        <label>Which continent would you most like to explore?</label>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="continent">Which continent would you most like to explore?</label>
         <select type="select" id="continent" name="continent">
-            <option value="volvo">Africa</option>
-            <option value="saab">Antarctica</option>
-            <option value="opel">Asia</option>
-            <option value="audi">Europe</option>
-            <option value="saab">North America</option>
-            <option value="opel">Australia</option>
-            <option value="audi">South America</option>
+            <option value="Africa">Africa</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="Australia">Australia</option>
+            <option value="South America">South America</option>
         </select>
         
         <p>What interests you the most?</p>
   
         <input type="radio" id="nature" name="interest" value="nature" checked>
-        <label>Nature</label><br>
+        <label for="nature">Nature</label><br>
 
         <input type="radio" id="phone" name="contact" value="phone_choice">
-        <label>Wildlife</label><br>
+        <label for="id">Wildlife</label><br>
 
         <input type="radio" id="mail" name="contact" value="mail_choice">
-        <label>History & Culture</label><br>
+        <label for="mail">History & Culture</label><br>
 
-        <label>Tell us what you would like to discover</label><br>
+        <label for="comments">Tell us what you would like to discover</label><br>
         <input type="textarea" id="comments" name="comments" cols="30" rows="4"><br>
-        <label>Email me about new destinations and travel ideas</label><br>
+        <label for="updates">Email me about new destinations and travel ideas</label><br>
         <input type="select" id="updates" name="updates" checked><br>
         <input type="submit" value="Submit Survey">
     </form>
