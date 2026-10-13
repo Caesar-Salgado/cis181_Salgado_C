@@ -95,10 +95,9 @@ input[type="submit"] {
 }
 
 .page-wrapper {
-    padding-bottom: 1em;
-    padding-top: 1em;
-    padding-right: 2em;
-    padding-left: 2em;
+    max-width: 0 auto;
+    margin: 0 auto;
+    padding: 1em 2em;
 }
 
 header, footer {
