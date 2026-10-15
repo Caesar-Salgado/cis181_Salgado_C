@@ -145,3 +145,24 @@ nav {
     padding: 0;
     margin: 0;
 }
+
+nav:hover { color: #c85a17; }
+nav:active { color: #b03a2e; }
+nav:focus { outline: 3px solid #f4a261; text-decoration: underline; }
+
+.sidebar{
+    width: 100%;
+    padding: 2em;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    border-bottom: #006d77;
+    padding: 2em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+.page-wrapper {
+    width: 100%;
+}

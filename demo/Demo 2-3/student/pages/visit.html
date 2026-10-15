@@ -8,17 +8,28 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <!-- TODO 1: Add a link to #main here, with class="skip-link" and the text "Skip to main content". -->
+    <a href="#main" class="skip-link">Skip to main content</a>
     <header class="page-header">
       <div class="container">
         <p><a href="../index.html">Thai Terrace</a></p>
-        <!-- TODO 2: Add nav with aria-label="Primary". Inside it, add a ul with three li elements and Home, Menu, and Visit links. Use ../index.html, menu.html, and visit.html, respectively. -->
-        <!-- TODO 3: In the navigation you just added, put aria-current="page" on the Visit link only. -->
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="visit.html" aria-current="page">Visit</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <!-- TODO 4: Add a breadcrumb nav with aria-label="Breadcrumb" and class="container". Link Home to ../index.html, followed by / Visit as plain text. -->
-    <!-- TODO 5: Add id="main" to the main element as the skip-link destination. -->
-    <main class="container">
+    <!-- TODO 4: Add a breadcrumb nav with aria-label="Breadcrumb" and class="container". Link Home to ../index.html, 
+      followed by / Visit as plain text. -->
+      <nav aria-label="Breadcrumb" class="container">
+        <ul>
+          <li><a href="../index.html">Home</a>/Visit</li>
+        </ul>
+      </nav>
+
+    <main id="main" class="container">
       <h1>Visit Thai Terrace</h1>
       <p>Thai Terrace is a fictional food stall in the Wilbur Wright College cafeteria.</p>
       <!-- TODO 6: Add id="hours" to this section as the destination for the Home page fragment link. -->
