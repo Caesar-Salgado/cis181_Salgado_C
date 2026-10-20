@@ -146,7 +146,6 @@ a:focus { outline: 3px solid #f4a261; text-decoration: underline; }
     margin: 0;
 }
 
-<<<<<<< HEAD
 .Primary ul li {
   float: right;
 }
@@ -159,24 +158,21 @@ a:focus { outline: 3px solid #f4a261; text-decoration: underline; }
 .sidebar {
     float: right;
     margin: 0 0 1em 2em;
-=======
 nav:hover { color: #c85a17; }
 nav:active { color: #b03a2e; }
 nav:focus { outline: 3px solid #f4a261; text-decoration: underline; }
+}
 
 .sidebar{
     width: 100%;
     padding: 2em;
->>>>>>> a4bfa58d2ba79eaf5df91d82e111e0a9eeb33fa8
 }
 
 .sidebar h3 {
     font-size: 20px;
-<<<<<<< HEAD
 }
 
 .wrapper {
-=======
     border-bottom: #006d77;
     padding: 2em;
     margin-bottom: 2em;
@@ -184,6 +180,5 @@ nav:focus { outline: 3px solid #f4a261; text-decoration: underline; }
 }
 
 .page-wrapper {
->>>>>>> a4bfa58d2ba79eaf5df91d82e111e0a9eeb33fa8
     width: 100%;
 }
