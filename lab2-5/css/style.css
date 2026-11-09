@@ -151,3 +151,97 @@ nav a:focus { background: #c85a17; color: #ffffff; }
 .wrapper { width: 100%; }
 .sidebar h3 { margin: 0 0 0.5em; padding-bottom: 0.35em; border-bottom: 2px solid #2e8b57; font-size: 20px; text-transform: uppercase; }
 .sidebar li { padding: 0.5em 0; border-bottom: 1px solid #b7d6c2; }
+
+
+
+/* Lab 2-5 */
+
+/* 1105px ÷ 1280px = 0.8633   86.33% */
+.page-wrapper {
+    width: 86.33%;
+    max-width: 1105px;
+    margin: 0 auto;
+}
+
+/* 730px ÷ 1105px = 0.6606   66.06% */
+.earth-content {
+    width: 66.06%;
+}
+
+/* 330px ÷ 1105px = 0.2986   29.86% */
+.sidebar {
+    width: 29.86%;
+}
+ 
+/* 20px ÷ 16px = 1.25em */
+body {
+    font-size: 1.25em;
+}
+
+/* 52px ÷ 16px = 3.25em */
+h1 {
+    font-size: 3.25em;
+}
+
+/* 28px ÷ 16px = 1.75em */
+h2 {
+    font-size: 1.75em;
+}
+
+/* 20px ÷ 16px = 1.25em */
+h3 {
+    font-size: 1.25em;
+}
+
+.earth-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .page-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .earth-content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .layout {
+        padding: 0.75em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    /* Stack content vertically */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Make navigation mobile-friendly */
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        padding: 0;
+    }
+
+    nav li {
+        list-style: none;
+    }
+}
